@@ -3,3 +3,48 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main {
+	width: 960px;
+	margin: 50px auto;
+}
+
+.list {
+	margin-bottom: 50px;
+}
+
+.list-item {
+	list-style: none;
+	padding: 20px;
+}
+
+.list-item:nth-child(odd) {
+	background-color: #e5e5e5;
+}
+
+.boxies {
+	width: 30%;
+	height: 200px;
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 40px;
+	background-color: gold;
+}
+
+.boxies:nth-child(3n) {
+	margin-right: 0;
+}
+
+.boxies:nth-last-child(-n+3) {
+	margin-bottom: 0;
+}
+
+.boxies:first-child,.boxies:nth-child(5),.boxies:last-child {
+	background-color: #ff8c00;
+}
